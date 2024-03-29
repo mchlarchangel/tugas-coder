@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Registration</h1>
+
+    <form>
+        <fieldset>
+            <legend>Biodata</legend>
+            <table>
+                <tr>
+                    <td>Nama Mahasiswa</td>
+                    <td><span>: </span><input type="text" name="nama_mahasiswa" placeholder="Masukkan Nama Anda" size="30"></td>
+                </tr>
+                <tr>
+                    <td>No Induk Mahasiswa(NIM)</td>
+                    <td><span>: </span> <input type="text" name="nim" placeholder="Masukkan NIM Anda" size="30"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Alamat Mahasiswa</td>
+                    <td valign="top"><span>: </span><textarea name="alamat" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><span>: </span><input type="date" name="tanggal_lahir"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td><span>:</span>
+                        <input type="radio" name="jenis_kelamin" value="Laki-laki">Laki-laki
+                        <input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Foto</td>
+                    <td><span>: </span><input type="file" name="foto"></td>
+                </tr>
+                <tr>
+                    <td>Url Website</td>
+                    <td><span>: </span><input type="url" name="website" placeholder="URL Website Anda"></td>
+                </tr>
+                <tr>
+                    <td>Perguruan Tinggi</td>
+                    <td><span>: </span><input type="text" name="perguruan_tinggi"></td>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <br>
+    
+        <fieldset>
+            <legend>Info Akun</legend>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td><span>: </span><input type="email" name="email" placeholder="Email Anda"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><span>: </span><input type="text" name="username" placeholder="Username Anda"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><span>: </span><input type="password" name="password" placeholder="Password Anda"></td>
+                </tr>
+                <tr>
+                    <td>Ulangi Password</td>
+                    <td><span>: </span><input type="password" name="ulangi_password" placeholder="Password Anda"></td>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <br>
+    
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+            <input type="checkbox" name="kemampuan[]" value="HTML">HTML
+            <input type="checkbox" name="kemampuan[]" value="CSS">CSS
+            <input type="checkbox" name="kemampuan[]" value="JavaScript">JavaScript
+            <input type="checkbox" name="kemampuan[]" value="PHP">PHP
+            <input type="checkbox" name="kemampuan[]" value="MySQL">MySQL
+            <input type="checkbox" name="kemampuan[]" value="Laravel">Laravel
+            <input type="checkbox" name="kemampuan[]" value="React Native">React Native
+        </fieldset>
+    
+        <br>
+    
+        <input type="reset" value="Reset">
+        <input type="submit" value="Simpan">
+    </form>
+    
+</body>
+</html>
+
+
